@@ -60,7 +60,7 @@ const Navbar = () => {
             <Link to="/enlist" onClick={closeDropdown}>
               Enlist
             </Link>
-            <Link to="/mybids" onClick={closeDropdown}>
+            <Link to="/yourbids" onClick={closeDropdown}>
               My Bids
             </Link>
           </div>
