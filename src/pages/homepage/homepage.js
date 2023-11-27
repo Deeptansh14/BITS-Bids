@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./homepage.css";
 import dika from "../../images/dika.png";
 import { Link } from "react-router-dom";
 
+
 function Homepage() {
+ 
+
   return (
     <>
       <div>
