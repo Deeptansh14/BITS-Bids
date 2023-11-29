@@ -13,9 +13,9 @@ function Homepage() {
       </div>
 
       <div className="image-signin-container">
-        <div className="signin-container">
-          <button className="signinButton">Sign In</button>
-        </div>
+        
+          <Link to="/signin"><button className="signinButton">Sign In</button></Link>
+        
         <img className="dika" src={dika} alt="" />
       </div>
 
