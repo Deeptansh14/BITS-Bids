@@ -20,5 +20,53 @@ export const slides = [
       currentbid: "800",
       description: "size L colour red doesnt fit me anymore after my weight lost journey and didn't wore it much",
       image: img3
+    },
+    { id:4, 
+      title: "iphone",
+      currentbid: "100,000",
+      description: "Apple iPhone 14 Pro Max (256 GB) - White, 48MP Main camera for up to 4x greater resolution slightly used wanted to buy iphone 15 so selling this",
+      image: img1
+    },
+    { id:5, 
+      title: "iphone",
+      currentbid: "100,000",
+      description: "Apple iPhone 14 Pro Max (256 GB) - White, 48MP Main camera for up to 4x greater resolution slightly used wanted to buy iphone 15 so selling this",
+      image: img1
+    },
+    { id:6, 
+      title: "iphone",
+      currentbid: "100,000",
+      description: "Apple iPhone 14 Pro Max (256 GB) - White, 48MP Main camera for up to 4x greater resolution slightly used wanted to buy iphone 15 so selling this",
+      image: img1
+    },
+    { id:7, 
+      title: "iphone",
+      currentbid: "100,000",
+      description: "Apple iPhone 14 Pro Max (256 GB) - White, 48MP Main camera for up to 4x greater resolution slightly used wanted to buy iphone 15 so selling this",
+      image: img1
+    },
+    { id:8, 
+      title: "iphone",
+      currentbid: "100,000",
+      description: "Apple iPhone 14 Pro Max (256 GB) - White, 48MP Main camera for up to 4x greater resolution slightly used wanted to buy iphone 15 so selling this",
+      image: img1
+    },
+    { id:9, 
+      title: "iphone",
+      currentbid: "100,000",
+      description: "Apple iPhone 14 Pro Max (256 GB) - White, 48MP Main camera for up to 4x greater resolution slightly used wanted to buy iphone 15 so selling this",
+      image: img1
+    },
+    { id:10, 
+      title: "iphone",
+      currentbid: "100,000",
+      description: "Apple iPhone 14 Pro Max (256 GB) - White, 48MP Main camera for up to 4x greater resolution slightly used wanted to buy iphone 15 so selling this",
+      image: img1
+    },
+    { id:11, 
+      title: "iphone",
+      currentbid: "100,000",
+      description: "Apple iPhone 14 Pro Max (256 GB) - White, 48MP Main camera for up to 4x greater resolution slightly used wanted to buy iphone 15 so selling this",
+      image: img1
     }
   ];

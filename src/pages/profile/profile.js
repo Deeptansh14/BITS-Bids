@@ -1,33 +1,21 @@
-// user1Profile.js
-/*
 import React from 'react';
-import './profile.css';
-import user1 from './user';
-
-const Profile = ({ user11 }) => {
-  return (
-    <div className="profile-container">
-      <img src={user1.profilePicture} alt="Profile" className="profile-image" />
-
-      <div className="user1-details">
-        <h2>{user1.name}</h2>
-        <p>Email: {user1.email}</p>
-        <p>Location: {user1.location}</p>
-      </div>
-
-      <div className="user1-activity">
-        <h3>Recent Activity</h3>
-        
-        {user1.recentActivity.map((activity, index) => (
-          <div key={index} className="activity-item">
-            <p>{activity.description}</p>
-            <small>{activity.timestamp}</small>
-          </div>
-        ))}
-      </div>
+import { user1 } from './user';
+import './profile.css'; // Import your CSS file
+import Navbarboot from "../../components/navbar/navbarboot";
+const PROFILE = () => {
+  return (<>
+    <div>
+      <Navbarboot/>
     </div>
+    <div className="profile-container">
+      <img src={user1[0].profilePicture} alt="Profile" className="profile-picture" />
+      <div className="profile-info">
+        <h2 className="profile-name">{user1[0].name}</h2>
+        <p className="profile-email">Email: {user1[0].email}</p>
+        <p className="profile-wallet">Wallet: {user1[0].wallet}</p>
+      </div>
+    </div></>
   );
-};
+}
 
-export default Profile;
-*/
+export default PROFILE;

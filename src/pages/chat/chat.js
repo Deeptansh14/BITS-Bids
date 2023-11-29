@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../../components/navbar/navbar";
+import Navbarboot from "../../components/navbar/navbarboot";
 
 function Chat() {
   return (
     <div>
-    <Navbar />
+    <Navbarboot />
       
     </div>
   );
