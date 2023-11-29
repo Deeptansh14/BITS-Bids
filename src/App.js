@@ -7,6 +7,9 @@ import YourBids from "./pages/yourbids/yourbids";
 import Chat from "./pages/chat/chat";
 import { slides } from "./pages/market/mydata";
 import ItemDetail from "./pages/itemdetails/itemdetails";
+import PROFILE from "../src/pages/profile/profile";
+import EnlistmentPage from "./pages/Enlistpage/Enlist";
+
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
 <Route path="/market" element={<MarketPage />} />
 <Route path="/yourbids" element={<YourBids />} />
 <Route path="/chat" element={<Chat />} />
+<Route path="/profile" element={<PROFILE />} />
+<Route path="/enlist" element={<EnlistmentPage />} />
+
 {slides.map((item) => (
           <Route
            
