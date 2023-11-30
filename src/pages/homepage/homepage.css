@@ -9,6 +9,7 @@ body {
     height: 100vh;
     font-family: 'Arial', sans-serif;
     flex-direction: column;
+   
 }
 
 .title-slogan-container {
@@ -50,14 +51,7 @@ body {
     left: 1rem;
     z-index: 2;
 }
-.image-signin-container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px; /* Adjust margin as needed */
-  }
-  
+
   
 
 

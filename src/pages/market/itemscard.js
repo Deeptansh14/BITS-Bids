@@ -4,13 +4,17 @@ import { Link } from "react-router-dom";
 import { slides } from "./mydata";
 
 const Itemscard = () => {
+ const getProductDetailsById = (productId) => {
+    return slides.find(item => item.id === productId);
+  };
+  
   return (
     <>
       <div className="cardGrid">
         {slides.map((item) => (
           <div key={item.id}>
             
-            <Link to={`/market/${item.title}`} className="card-link">
+            <Link to={`/market/${item.id}`} className="card-link">
               <div className="card">
                 <div className="imgbox">
                   <img className="item-image" src={item.image} alt="item image" />
@@ -26,4 +30,4 @@ const Itemscard = () => {
   );
 }
 
-export default Itemscard;
+export default { getProductDetailsById,Itemscard};

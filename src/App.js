@@ -25,7 +25,7 @@ const App = () => {
 {slides.map((item) => (
           <Route
            
-            path={"/market/${item.title}}"}
+            path={"/market/${item.id}}"}
             element={<ItemDetail />}
           />
         ))}

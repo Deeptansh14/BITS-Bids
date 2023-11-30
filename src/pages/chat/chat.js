@@ -5,7 +5,6 @@ function Chat() {
   return (
     <div>
     <Navbarboot />
-      
     </div>
   );
 }

@@ -68,5 +68,10 @@ export const slides = [
       currentbid: "100,000",
       description: "Apple iPhone 14 Pro Max (256 GB) - White, 48MP Main camera for up to 4x greater resolution slightly used wanted to buy iphone 15 so selling this",
       image: img1
+    },{ id:12, 
+      title: "iphone13",
+      currentbid: "100,000",
+      description: "Apple iPhone 14 Pro Max (256 GB) - White, 48MP Main camera for up to 4x greater resolution slightly used wanted to buy iphone 15 so selling this",
+      image: img1
     }
   ];

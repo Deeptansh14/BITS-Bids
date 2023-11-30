@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function Navbarboot(props){
   return (
     <div className="navbar navbar-expand-lg bg-body-tertiary" style={{ width: "100%" }}>

@@ -8,16 +8,13 @@ import Navbarboot from "../../components/navbar/navbarboot";
 function Homepage() {
   return (
     <>
-      <div className="homepage-top">
+      <div>
         <Navbarboot />
       </div>
 
-      <div className="image-signin-container">
-        
-          <Link to="/signin"><button className="signinButton">Sign In</button></Link>
-        
+      <div>
         <img className="dika" src={dika} alt="" />
-      </div>
+        
 
       <div className="title-slogan-container">
         <div className="title">BITS Bids</div>
@@ -34,7 +31,7 @@ function Homepage() {
         <Link to="/chat">
           <button className="chatbutton">Chat</button>
         </Link>
-      </div>
+      </div></div>
     </>
   );
 }
