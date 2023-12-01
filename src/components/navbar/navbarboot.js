@@ -1,7 +1,9 @@
 import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 export default function Navbarboot(props){
+  const { loginWithRedirect,isAuthenticated,logout,user} = useAuth0();
   return (
     <div className="navbar navbar-expand-lg bg-body-tertiary" style={{ width: "100%" }}>
       <div className="container-fluid" style={{ maxWidth: "100%" }}>
@@ -30,6 +32,24 @@ export default function Navbarboot(props){
             <input className="form-control me-2 flex-grow-1" type="search" placeholder="Search" aria-label="Search"></input>
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
+          {isAuthenticated &&( 
+            <li><p> {user.name}
+            </p></li>)}
+          
+          {
+            isAuthenticated ?(
+            <li>
+          <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+            Log Out
+          </button>
+          </li>
+          ) : (
+            <li>
+          <button onClick={() => loginWithRedirect()}>Log In</button>
+          </li>
+          )
+          }
+                    
         </div>
       </div>
     </div>
