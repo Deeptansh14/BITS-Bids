@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import { slides } from "./mydata";
 
 const Itemscard = () => {
- const getProductDetailsById = (productId) => {
-    return slides.find(item => item.id === productId);
-  };
+ 
   
   return (
     <>
@@ -30,4 +28,4 @@ const Itemscard = () => {
   );
 }
 
-export default { getProductDetailsById,Itemscard};
+export default Itemscard;

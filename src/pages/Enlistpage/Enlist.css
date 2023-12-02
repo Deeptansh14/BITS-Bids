@@ -1,94 +1,81 @@
 /* Style the entire enlistment page with a light background and padding */
 body {
-    background-color: #f5f5f5;
-    padding: 20px;
-    font-family: sans-serif;
-  }
-  
-  /* Style the enlistment page container */
+  margin: 0;
+  font-family: sans-serif;
+  color: #000  !important; /* Black text color */
+}
+
+/* Update the styles for the enlistment page */
+.enlistment-page {
+  background-color: #f0f9f0; /* Light green background */
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 100vw; /* Set maximum width to cover the entire screen */
+}
+
+/* Style the enlistment page header */
+.enlistment-page h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0a1f0a; /* Dark green header text */
+}
+
+/* Update the form styles */
+form {
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Update label and input styles */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #0a160a; /* Dark green label text */
+}
+
+input,
+textarea {
+  width: calc(100% - 12px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+button {
+  background-color: #107c10; /* Dark green button */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Additional styles for responsiveness */
+@media screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens */
   .enlistment-page {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Style the enlistment page header */
-  .enlistment-page h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Style the form */
-  form {
-    border: 1px solid #ccc;
     padding: 10px;
   }
-  
-  /* Style the form labels */
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  .enlistment-page h1 {
+    font-size: 24px;
   }
-  
-  /* Style the form inputs */
-  input, textarea {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
+  form {
+    padding: 10px;
   }
-  
-  /* Style the submit button */
+  label,
+  input,
+  textarea {
+    font-size: 14px;
+  }
   button {
-    background-color: #007bff;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
+    padding: 6px 12px;
   }
-  
-  /* Style the table */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  /* Style the table header cells */
-  th {
-    background-color: #eee;
-    font-weight: bold;
-    padding: 5px;
-    text-align: left;
-  }
-  
-  /* Style the table body cells */
-  td {
-    background-color: #fff;
-    padding: 5px;
-  }
-  
-  /* Style the item row to flex items horizontally */
-  .item-row {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Style the item image to have a fixed width and height */
- 
-  
-  /* Style the item description to have a maximum width and ellipsize if necessary */
-  .item-description {
-    max-width: 300px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  /* Style the remove button to have a red background and white text */
-  .remove-button {
-    background-color: #dc3545;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-  }
+}

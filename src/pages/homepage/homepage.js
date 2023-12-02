@@ -6,7 +6,7 @@ import { Navbar } from "react-bootstrap";
 import Navbarboot from "../../components/navbar/navbarboot";
 
 function Homepage() {
-  return (
+return (
     <>
       <div>
         <Navbarboot />

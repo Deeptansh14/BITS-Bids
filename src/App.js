@@ -23,12 +23,12 @@ const App = () => {
 <Route path="/enlist" element={<EnlistmentPage />} />
 <Route path="/signin" element={<SigninPage />} />
 {slides.map((item) => (
-          <Route
-           
-            path={"/market/${item.id}}"}
-            element={<ItemDetail />}
-          />
-        ))}
+    <Route
+      key={item.id} // Remember to add a unique key for each route
+      path={`/market/${item.id}`} // Dynamic route based on item id
+      element={<ItemDetail item={item} />} // Pass the item data to ItemDetail
+    />
+  ))}
     </Routes>
 
     
